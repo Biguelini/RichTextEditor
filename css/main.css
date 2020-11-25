@@ -12,17 +12,17 @@
     flex-direction: column;
 }
 .richTextField{
-    width: 80vw;
+    width: 1000px;
     height: 500px;
     background-color: aliceblue;
     border-radius:  0 0 16px 16px ;
 }
 .header{
-    width: 80vw;
+    width: 1000px;
     height: 200px;
     background-color: red;
     border-radius: 16px 16px 0 0 ;
-    padding: 10px;
+    padding: 20px;
     display: inline-block;
 }
 .menu li{
@@ -39,10 +39,15 @@ li ~ li{
 }
 .tooltxt{
     width: 90px;
+    margin-bottom: 10px;
 }
 button{
     margin-bottom: 10px;
+    cursor: pointer;
 }
-select:focus{
+select, input{
+    cursor: pointer;
+}
+select:focus, button:focus{
     outline: none;
 }

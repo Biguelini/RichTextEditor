@@ -12,15 +12,37 @@
     flex-direction: column;
 }
 .richTextField{
-    width: 70vw;
+    width: 80vw;
     height: 500px;
     background-color: aliceblue;
     border-radius:  0 0 16px 16px ;
 }
 .header{
-    width: 70vw;
-    height: 5vh;
+    width: 80vw;
+    height: 200px;
     background-color: red;
     border-radius: 16px 16px 0 0 ;
     padding: 10px;
+    display: inline-block;
+}
+.menu li{
+    display: inline;
+}
+.tools{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+li ~ li{
+    margin-left: 10px;
+}
+.tooltxt{
+    width: 90px;
+}
+button{
+    margin-bottom: 10px;
+}
+select:focus{
+    outline: none;
 }

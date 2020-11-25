@@ -25,7 +25,7 @@
                         <button class="tools" onclick="execCmd('superscript');"><i class="fa fa-superscript"></i></button>
                     </li>
                     <li class="paragraphFormat">
-                        <select class="tools tooltxt" style="width: 50px;" name="" id="">
+                        <select class="tools tooltxt" style="width: 50px;" name="" id="" onchange="execCommandWithArg('formatBlock',this.value);">
                             <option value="H1">H1</option>
                             <option value="H2">H2</option>
                             <option value="H3">H3</option>
@@ -43,10 +43,10 @@
                         <button class="tools" onclick="execCmd('insertOrderedList');"><i class="fa fa-list-ol"></i></button>
                     </li>
                     <li class="generalCommands">
-                        <button class="tools" onclick="execCmd('bold');"><i class="fa fa-paragraph"></i></button>
-                        <button class="tools" onclick="execCmd('bold');"><i class="fa fa-link"></i></button>
-                        <button class="tools" onclick="execCmd('bold');"><i class="fa fa-unlink"></i></button>
-                        <button class="tools" onclick="execCmd('bold');"><i class="fa fa-code"></i></button>
+                        <button class="tools" onclick="execCmd('insertParagraph');"><i class="fa fa-paragraph"></i></button>
+                        <button class="tools" onclick="execCmd('createLink', prompt('Enter a url', 'http://'));"><i class="fa fa-link"></i></button>
+                        <button class="tools" onclick="execCmd('unlink');"><i class="fa fa-unlink"></i></button>
+                        <button class="tools" onclick="toggleSource();"><i class="fa fa-code"></i></button>
                         <button class="tools" onclick="execCmd('cut');"><i class="fa fa-cut"></i></button>
                         <button class="tools" onclick="execCmd('copy');"><i class="fa fa-copy"></i></button>
                         <button class="tools" onclick="execCmd('undo');"><i class="fa fa-undo"></i></button>
@@ -56,7 +56,7 @@
                 <ul class="menu" align="center">
                     <li class="font">
                         <label for="font">Font: </label>
-                        <select class="tools tooltxt" style="width: 150px;"  name="font" id="font">
+                        <select class="tools tooltxt" style="width: 150px;"  name="font" id="font" onchange="execCommandWithArg('fontName',this.value);">
                             <option value="Arial">Arial</option>
                             <option value="Comic Sans MS">Comic Sans MS</option>
                             <option value="Courier">Courier</option>
@@ -66,7 +66,7 @@
                             <option value="Verdana">Verdana</option>
                         </select>
                         <label  for="size">Size: </label>
-                        <select class="tools tooltxt" style="width: 50px;" name="" id="">
+                        <select class="tools tooltxt" style="width: 50px;" name="" id="" onchange="execCommandWithArg('fontSize',this.value);">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -74,20 +74,19 @@
                             <option value="5">5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
-                            <option value="8">8</option>
                         </select>
                     </li>
                     <li class="colors">
                         <label for="colorPickTxt">Color: </label>
-                        <input type="color" name="colorPickTxt" id="colorPickTxt">
+                        <input type="color" name="colorPickTxt" id="colorPickTxt" onchange="execCommandWithArg('foreColor',this.value);">
                         <label for="colorPickBg">Background: </label>
-                        <input type="color" name="colorPickBg" id="colorPickBg">
+                        <input type="color" name="colorPickBg" id="colorPickBg" onchange="execCommandWithArg('hiliteColor',this.value);">
                     </li>
                     <li class="buttons">
-                        <button class="tools" onclick="execCmd('bold');">HR</button>
-                        <button class="tools tooltxt" onclick="execCmd('bold');">Toggle Edit</button>
-                        <button class="tools" onclick="execCmd('bold');"><i class="fa fa-file-image"></i></button>
-                        <button class="tools tooltxt" onclick="execCmd('bold');">Select All</button>
+                        <button class="tools" onclick="execCmd('insertHorizontalRule');">HR</button>
+                        <button class="tools tooltxt" onclick="toggleEdit();">Toggle Edit</button>
+                        <button class="tools" onclick="execCommandWithArg('insertImage',prompt('Enter the imaghe URL', 'http://'));"><i class="fa fa-file-image"></i></button>
+                        <button class="tools tooltxt" onclick="execCmd('selectAll');">Select All</button>
                     </li>
                 </ul>
             </div>

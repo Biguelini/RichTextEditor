@@ -16,14 +16,22 @@
     height: 500px;
     background-color: aliceblue;
     border-radius:  0 0 16px 16px ;
+    padding: 10px 20px;
+    
 }
 .header{
     width: 1000px;
-    height: 200px;
-    background-color: red;
+    height: 150px;
+    background-image: linear-gradient(120deg, rgb(30, 184, 230) 30%,rgb(30, 150, 230) 70%);
     border-radius: 16px 16px 0 0 ;
     padding: 20px;
     display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.menu{
+    padding-top: 15px;
 }
 .menu li{
     display: inline;
@@ -44,6 +52,7 @@ li ~ li{
 button{
     margin-bottom: 10px;
     cursor: pointer;
+    background: white;
 }
 select, input{
     cursor: pointer;

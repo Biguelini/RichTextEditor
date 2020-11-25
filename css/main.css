@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+.richTextField{
+    width: 70vw;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius:  0 0 16px 16px ;
+}
+.header{
+    width: 70vw;
+    height: 5vh;
+    background-color: red;
+    border-radius: 16px 16px 0 0 ;
+    padding: 10px;
+}

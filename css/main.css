@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     display: flex;
@@ -26,9 +27,9 @@
     border-radius: 16px 16px 0 0 ;
     padding: 20px;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
+    
 }
 .menu{
     padding-top: 15px;
@@ -59,4 +60,30 @@ select, input{
 }
 select:focus, button:focus{
     outline: none;
+}
+.message{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgb(30, 184, 230) 30%,rgb(30, 150, 230) 70%);
+    color: white;
+}
+@media screen and (max-width: 1000px){
+    .message{
+        display: flex;
+    }
+    .container{
+        display: none;
+    }
+}
+@media screen and (max-height: 650px){
+    .message{
+        display: flex;
+    }
+    .container{
+        display: none;
+    }
 }

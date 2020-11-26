@@ -30,3 +30,10 @@ function toggleEdit(){
         richTextField.document.designMode = "on";
     }
 }
+
+function createLink(){
+    var url = prompt('Enter a URL:', 'http://');
+    var selection = richTextField.document.getSelection();
+    richTextField.document.execCommand('createLink', false, url);
+    selection.anchorNode.parentElement.target = '_blank';
+}

@@ -3,13 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="./css/main.css">
-
         <script src="./js/script.js"></script>
-
         <script src="https://kit.fontawesome.com/dc5fac83f5.js" crossorigin="anonymous"></script>
-
         <title>RichTextEditor</title>
     </head>
     <body onload="enableEditMode()">
@@ -25,7 +21,8 @@
                         <button class="tools" onclick="execCmd('superscript');"><i class="fa fa-superscript"></i></button>
                     </li>
                     <li class="paragraphFormat">
-                        <select class="tools tooltxt" style="width: 50px;" name="" id="" onchange="execCommandWithArg('formatBlock',this.value);">
+                        <select class="tools tooltxt" style="width: 50px;" name="" id="" oninput="execCommandWithArg('formatBlock',this.value);">
+                            <option value="P">P</option>
                             <option value="H1">H1</option>
                             <option value="H2">H2</option>
                             <option value="H3">H3</option>
@@ -43,10 +40,8 @@
                         <button class="tools" onclick="execCmd('insertOrderedList');"><i class="fa fa-list-ol"></i></button>
                     </li>
                     <li class="generalCommands">
-                        <button class="tools" onclick="execCmd('insertParagraph');"><i class="fa fa-paragraph"></i></button>
-                        <button class="tools" onclick="execCmd('createLink', prompt('Enter a url', 'http://'));"><i class="fa fa-link"></i></button>
+                        <button class="tools" onclick="createLink();"><i class="fa fa-link"></i></button>
                         <button class="tools" onclick="execCmd('unlink');"><i class="fa fa-unlink"></i></button>
-                        <button class="tools" onclick="toggleSource();"><i class="fa fa-code"></i></button>
                         <button class="tools" onclick="execCmd('cut');"><i class="fa fa-cut"></i></button>
                         <button class="tools" onclick="execCmd('copy');"><i class="fa fa-copy"></i></button>
                         <button class="tools" onclick="execCmd('undo');"><i class="fa fa-undo"></i></button>
@@ -85,12 +80,16 @@
                     <li class="buttons">
                         <button class="tools" onclick="execCmd('insertHorizontalRule');">HR</button>
                         <button class="tools tooltxt" onclick="toggleEdit();">Toggle Edit</button>
-                        <button class="tools" onclick="execCommandWithArg('insertImage',prompt('Enter the imaghe URL', 'http://'));"><i class="fa fa-file-image"></i></button>
+                        <button class="tools" onclick="execCommandWithArg('insertImage',prompt('Enter the imaghe URL', 'Image link here'));"><i class="fa fa-file-image"></i></button>
                         <button class="tools tooltxt" onclick="execCmd('selectAll');">Select All</button>
                     </li>
                 </ul>
             </div>
-            <iframe name="richTextField" class="richTextField" frameborder="0">oi</iframe>
+            <iframe name="richTextField" class="richTextField" frameborder="0"></iframe>
+        </div>
+        <div class="message">
+            <h1>Por favor utilize um tamanho maior de tela!</h1>
+            <h2>Versão Mobile em breve! </h2>
         </div>
     </body>
 </html>

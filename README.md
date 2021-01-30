@@ -7,7 +7,7 @@
 ## Sobre
 O RichTextEditor é um editor de textos online estilizado
 ## Preview
-![Captura de tela 2020-12-04 085723](https://user-images.githubusercontent.com/68917493/101161081-c8214e00-360e-11eb-8b37-ae5e1c4697a3.png)
+![image](https://user-images.githubusercontent.com/68917493/106358915-d679a680-62ed-11eb-8b38-9e124f43b1b0.png)
 
 #### Como executar o projeto
 ```

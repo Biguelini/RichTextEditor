@@ -5,7 +5,11 @@
 #### 🚀 [Objetivos](https://github.com/Biguelini/RichTextEditor#objetivos)
 #### 💻	[Tecnologias](https://github.com/Biguelini/RichTextEditor#tecnologias)
 ## Sobre
-O RichTextEditor é um editor de textos online estilizado
+O RichTextEditor é um editor de textos online estilizado.
+Atalhos do editor:
+* Ctrl + B = negrito
+* Ctrl + I = itálico
+* Ctrl + U = sublinhado
 ## Preview
 ![image](https://user-images.githubusercontent.com/68917493/106358915-d679a680-62ed-11eb-8b38-9e124f43b1b0.png)
 

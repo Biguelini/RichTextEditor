@@ -4,92 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/script.js"></script>
-        <script src="https://kit.fontawesome.com/dc5fac83f5.js" crossorigin="anonymous"></script>
         <title>RichTextEditor</title>
     </head>
     <body onload="enableEditMode()">
         <div class="container">
             <div class="header">
-                <ul class="menu" align="center">
-                    <li class="txtFormat">
+                <ul class="menu">
+                    <li class="functions">
                         <button class="tools" onclick="execCmd('bold');"><i class="fa fa-bold"></i></button>
                         <button class="tools" onclick="execCmd('italic');"><i class="fa fa-italic"></i></button>
                         <button class="tools" onclick="execCmd('underline');"><i class="fa fa-underline"></i></button>
-                        <button class="tools" onclick="execCmd('strikeThrough');"><i class="fa fa-strikethrough"></i></button>
-                        <button class="tools" onclick="execCmd('subscript');"><i class="fa fa-subscript"></i></button>
-                        <button class="tools" onclick="execCmd('superscript');"><i class="fa fa-superscript"></i></button>
-                    </li>
-                    <li class="paragraphFormat">
-                        <select class="tools tooltxt" style="width: 50px;" name="" id="" oninput="execCommandWithArg('formatBlock',this.value);">
-                            <option value="P">P</option>
-                            <option value="H1">H1</option>
-                            <option value="H2">H2</option>
-                            <option value="H3">H3</option>
-                            <option value="H4">H4</option>
-                            <option value="H5">H5</option>
-                            <option value="H6">H6</option>
-                        </select>
                         <button class="tools" onclick="execCmd('justifyLeft');"><i class="fa fa-align-left"></i></button>
                         <button class="tools" onclick="execCmd('justifyCenter');"><i class="fa fa-align-center"></i></button>
                         <button class="tools" onclick="execCmd('justifyRight');"><i class="fa fa-align-right"></i></button>
                         <button class="tools" onclick="execCmd('justifyFull');"><i class="fa fa-align-justify"></i></button>
-                        <button class="tools" onclick="execCmd('indent');"><i class="fa fa-indent"></i></button>
-                        <button class="tools" onclick="execCmd('outdent');"><i class="fa fa-outdent"></i></button>
                         <button class="tools" onclick="execCmd('insertUnorderedList');"><i class="fa fa-list-ul"></i></button>
                         <button class="tools" onclick="execCmd('insertOrderedList');"><i class="fa fa-list-ol"></i></button>
-                    </li>
-                    <li class="generalCommands">
-                        <button class="tools" onclick="createLink();"><i class="fa fa-link"></i></button>
-                        <button class="tools" onclick="execCmd('unlink');"><i class="fa fa-unlink"></i></button>
-                        <button class="tools" onclick="execCmd('cut');"><i class="fa fa-cut"></i></button>
-                        <button class="tools" onclick="execCmd('copy');"><i class="fa fa-copy"></i></button>
-                        <button class="tools" onclick="execCmd('undo');"><i class="fa fa-undo"></i></button>
-                        <button class="tools" onclick="execCmd('redo');"><i class="fa fa-redo"></i></button>
-                    </li>
-                </ul>
-                <ul class="menu" align="center">
-                    <li class="font">
-                        <label for="font">Font: </label>
-                        <select class="tools tooltxt" style="width: 150px;"  name="font" id="font" onchange="execCommandWithArg('fontName',this.value);">
-                            <option value="Arial">Arial</option>
-                            <option value="Comic Sans MS">Comic Sans MS</option>
-                            <option value="Courier">Courier</option>
-                            <option value="Georgia">Georgia</option>
-                            <option value="Tahoma">Tahoma</option>
-                            <option value="Times New Roman">Times New Roman</option>
-                            <option value="Verdana">Verdana</option>
-                        </select>
-                        <label  for="size">Size: </label>
-                        <select class="tools tooltxt" style="width: 50px;" name="" id="" onchange="execCommandWithArg('fontSize',this.value);">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                        </select>
-                    </li>
-                    <li class="colors">
-                        <label for="colorPickTxt">Color: </label>
-                        <input type="color" name="colorPickTxt" id="colorPickTxt" onchange="execCommandWithArg('foreColor',this.value);">
-                        <label for="colorPickBg">Background: </label>
-                        <input type="color" name="colorPickBg" id="colorPickBg" onchange="execCommandWithArg('hiliteColor',this.value);">
-                    </li>
-                    <li class="buttons">
-                        <button class="tools" onclick="execCmd('insertHorizontalRule');">HR</button>
-                        <button class="tools tooltxt" onclick="toggleEdit();">Toggle Edit</button>
-                        <button class="tools" onclick="execCommandWithArg('insertImage',prompt('Enter the imaghe URL', 'Image link here'));"><i class="fa fa-file-image"></i></button>
-                        <button class="tools tooltxt" onclick="execCmd('selectAll');">Select All</button>
                     </li>
                 </ul>
             </div>
             <iframe name="richTextField" class="richTextField" frameborder="0"></iframe>
         </div>
-        <div class="message">
-            <h1>Por favor utilize um tamanho maior de tela!</h1>
-            <h2>Versão Mobile em breve! </h2>
-        </div>
     </body>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/dc5fac83f5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </html>

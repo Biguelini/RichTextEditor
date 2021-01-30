@@ -3,87 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+body{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
 }
 .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-}
-.richTextField{
-    width: 1000px;
-    height: 500px;
-    background-color: aliceblue;
-    border-radius:  0 0 16px 16px ;
-    padding: 10px 20px;
-    
+    background-color: white;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.158);
+    width: 80vw;
+    min-width: 400px;
+    border-radius: 10px;
+    margin: 5vh;
 }
 .header{
-    width: 1000px;
-    height: 150px;
-    background-image: linear-gradient(120deg, rgb(30, 184, 230) 30%,rgb(30, 150, 230) 70%);
-    border-radius: 16px 16px 0 0 ;
-    padding: 20px;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    
-}
-.menu{
-    padding-top: 15px;
-}
-.menu li{
-    display: inline;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
 }
 .tools{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    background:none;
     border: none;
-    border-radius: 4px;
-}
-li ~ li{
-    margin-left: 10px;
-}
-.tooltxt{
-    width: 90px;
-    margin-bottom: 10px;
-}
-button{
-    margin-bottom: 10px;
     cursor: pointer;
-    background: white;
+    font-size: 16px;
 }
-select, input{
-    cursor: pointer;
-}
-select:focus, button:focus{
+.tools:focus{
     outline: none;
 }
-.message{
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(120deg, rgb(30, 184, 230) 30%,rgb(30, 150, 230) 70%);
-    color: white;
-}
-@media screen and (max-width: 1000px){
-    .message{
-        display: flex;
-    }
-    .container{
-        display: none;
-    }
-}
-@media screen and (max-height: 650px){
-    .message{
-        display: flex;
-    }
-    .container{
-        display: none;
-    }
+iframe{
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
 }

@@ -1,6 +1,6 @@
 # Rich Text Editor
 
-## Ídice :memo:
+## Índice :memo:
 #### ✏️ [Sobre](https://github.com/Biguelini/RichTextEditor#sobre)
 #### 🚀 [Objetivos](https://github.com/Biguelini/RichTextEditor#objetivos)
 #### 💻	[Tecnologias](https://github.com/Biguelini/RichTextEditor#tecnologias)

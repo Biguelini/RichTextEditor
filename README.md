@@ -6,6 +6,7 @@
 #### 💻	[Tecnologias](https://github.com/Biguelini/RichTextEditor#tecnologias)
 ## Sobre
 O RichTextEditor é um editor de textos online estilizado.
+<br>
 Atalhos do editor:
 * Ctrl + B = negrito
 * Ctrl + I = itálico

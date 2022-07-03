@@ -3,7 +3,7 @@
 ## Índice :memo:
 #### ✏️ [Sobre](https://github.com/Biguelini/RichTextEditor#sobre)
 #### 🚀 [Objetivos](https://github.com/Biguelini/RichTextEditor#objetivos)
-#### 💻	[Tecnologias](https://github.com/Biguelini/RichTextEditor#tecnologias)
+#### 💻	[Tecnologias](https://github.com/Biguelini/RichTextEditor#tecnologias-1)
 ## Sobre
 O RichTextEditor é um editor de textos online estilizado.
 <br>
